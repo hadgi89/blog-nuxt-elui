@@ -11,12 +11,10 @@
       ref="form"
       @submit.native.prevent="onSubmit"
     >
-      <!-- <h2>Войти в панель администратора</h2> -->
-
       <el-form-item label="Текст в формате .md или .html" prop="text">
         <el-input
           type="textarea"
-          v-model.trim="controls.text"
+          v-model="controls.text"
           resize="none"
           :rows="10"
         />
